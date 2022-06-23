@@ -91,4 +91,27 @@ export default {
     background: #E8E8FC;
   }
 }
+  @media screen and (max-width: 767px){
+    .comp__list article{
+      padding: 20px;
+    }
+    .comp__list .description{
+      font-size: 16px;
+    }
+    .comp__list{
+      column-gap: 15px;
+    }
+    .compen{
+      padding-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 575px){
+    .comp__list{
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+    .compen{
+      padding-bottom: 40px;
+    }
+  }
 </style>

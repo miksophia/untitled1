@@ -1,6 +1,6 @@
 <template>
   <app-header></app-header>
-  <div class="root-button-banner banner banner-top">
+  <div class="root-button-banner banner banner-top banner-new-cus">
     <img :src="fon1" class="banner__fon">
     <app-banner></app-banner>
   </div>
@@ -16,6 +16,7 @@
              @close="closeModal">
 
   </app-modal>
+  <app-modal-sec v-show="SecMod" @close2="secCloseModal"></app-modal-sec>
 </template>
 
 <script>
@@ -30,6 +31,7 @@ import AppInt from './components/AppInt'
 import AppConpen from './components/AppConpen'
 import AppSteps from './components/AppSteps'
 import AppModal from './components/AppModal'
+import AppModalSec from './components/AppModalSec'
 
 export default {
   name: 'App',
@@ -43,12 +45,14 @@ export default {
     'app-int': AppInt,
     'app-conpen': AppConpen,
     'app-steps': AppSteps,
-    'app-modal': AppModal
+    'app-modal': AppModal,
+    'app-modal-sec': AppModalSec
   },
   data: function () {
     return {
       fon1: fon1,
-      isModalVisible: false
+      isModalVisible: false,
+      SecMod: false
     }
   },
   methods: {
@@ -59,6 +63,9 @@ export default {
     closeModal () {
       this.isModalVisible = false
       document.documentElement.style.overflow = 'auto'
+    },
+    secCloseModal () {
+      this.SecMod = false
     }
   }
 }
@@ -148,4 +155,16 @@ body {
     top: 0;
     right: 0;
   }
+@media screen and (max-width: 1199px){
+  .root-button-banner .banner__fon{
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .banner-new-cus{
+    margin-top: 60px;
+  }
+}
 </style>

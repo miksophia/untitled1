@@ -58,4 +58,25 @@ export default {
  #app .page-content.talk-block{
     margin-bottom: 80px;
   }
+@media screen and (max-width: 767px){
+  .talk{
+    column-gap: 60px;
+    .description{
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  #app .page-content.talk-block{
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 575px){
+  .talk{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  #app .page-content.talk-block{
+    margin-bottom: 40px;
+  }
+}
 </style>

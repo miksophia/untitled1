@@ -86,4 +86,27 @@ li:after{
  #app .page-content.reason{
     margin-bottom: 100px;
   }
+@media screen and (max-width: 767px){
+  .list-reason .description{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 575px){
+  .list-reason li:before{
+    content: none;
+  }
+  .list-reason li:after{
+    left: 5px;
+  }
+  .list-reason li{
+    padding: 0 0 0 30px;
+    margin: 0 0 20px 0;
+  }
+  .list-reason .item-title{
+    margin-bottom: 10px;
+  }
+  .list-reason .description{
+    font-size: 14px;
+  }
+}
 </style>

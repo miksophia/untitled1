@@ -99,4 +99,33 @@ export default {
     margin: 0 auto;
   }
 }
+
+@media screen and (max-width: 767px){
+  #app .t-new{
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+  .about-host__list{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    p{
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 575px){
+  #app .t-new{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .about-host__list{
+    grid-gap: 20px 10px;
+  }
+  .about-host__list p{
+    font-size: 14px;
+  }
+  #app .page-content.about-host{
+    margin-bottom: 40px;
+  }
+}
 </style>

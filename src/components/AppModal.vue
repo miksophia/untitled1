@@ -127,4 +127,38 @@ export default {
 
   }
 }
+  @media screen and (max-width: 1199px){
+    .modal{
+      padding: 15px 40px;
+    }
+    .modal-body input, .modal-body textarea{
+      line-height: 18px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .modal{
+      padding: 10px 20px;
+    }
+    .modal-body input, .modal-body textarea{
+      min-width: 400px;
+    }
+  }
+  @media screen and (max-width: 575px){
+    .modal{
+      padding: 15px;
+    }
+    .modal-body input, .modal-body textarea{
+      min-width: 210px;
+    }
+    .btn-close{
+      top: 10px;
+      right: 10px;
+    }
+    .modal-body{
+      padding: 0;
+    }
+    .modal__header{
+      font-size: 24px;
+    }
+  }
 </style>

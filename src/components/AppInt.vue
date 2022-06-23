@@ -136,4 +136,37 @@ export default {
       width: 100%;
     }
   }
+  @media screen and (max-width: 767px){
+    .int-wrapper{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .t-white{
+      font-size: 26px;
+      padding-bottom: 30px;
+    }
+    .int__content{
+      grid-template-columns: 1fr;
+      img{
+        display: none;
+      }
+    }
+    #app .list.list-white-cus li, .int__content .description{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 575px){
+    .t-white{
+      font-size: 24px;
+    }
+    .int-wrapper{
+      padding-top: 30px;
+    }
+    .int__text .cont-btn {
+      display: flex;
+    }
+    .int-wrapper{
+      padding-bottom: 40px;
+    }
+  }
 </style>

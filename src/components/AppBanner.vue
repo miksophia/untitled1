@@ -1,5 +1,5 @@
 <template>
-  <div class="container root-button-banner banner banner-top">
+  <div class="container">
     <div class="layout">
       <div class="flex xs12 banner-new">
         <h1>
@@ -43,7 +43,7 @@ export default {
   max-width: 625px;
 }
   .banner-new{
-    margin-top: 120px;
+    margin-top: 100px;
     margin-bottom: 150px;
     h1{
       font-weight: 600;
@@ -54,4 +54,28 @@ export default {
       margin-bottom: 50px;
     }
   }
+
+@media screen and (max-width: 767px){
+  .banner-new{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    h1{
+      font-size: 34px;
+    }
+  }
+}
+@media screen and (max-width: 575px){
+  .banner-new h1{
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  #app .list.list-banner li{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .banner-new{
+    margin-bottom: 40px;
+  }
+
+}
 </style>

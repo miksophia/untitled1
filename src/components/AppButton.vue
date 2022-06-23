@@ -18,6 +18,11 @@
     cursor: pointer;
     width: fit-content;
   }
+  @media screen and (max-width: 575px){
+    .cont-btn{
+      margin: 0 auto;
+    }
+  }
 </style>
 
 <script>

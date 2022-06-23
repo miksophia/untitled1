@@ -39,4 +39,24 @@ export default {
 #app .page-content.banner-mn{
     margin-bottom: 80px;
   }
+
+@media screen and (max-width: 767px){
+  .banner-btm p{
+    font-size: 26px;
+  }
+  .banner-btm{
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 575px){
+  .banner-btm p{
+    font-size: 20px;
+  }
+  .banner-btm{
+    padding: 30px 15px;
+  }
+  #app .page-content.banner-mn{
+    margin-bottom: 40px;
+  }
+}
 </style>

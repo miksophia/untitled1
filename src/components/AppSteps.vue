@@ -154,4 +154,30 @@ export default {
     background-size: 15%;
     background-color: white;
   }
+@media screen and (max-width: 1023px){
+  .steps__list{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 15px;
+  }
+}
+@media screen and (max-width: 767px){
+  .step__btn{
+    padding: 35px;
+  }
+  .step__btn__title{
+    font-size: 20px;
+  }
+  .step__btn .description{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 575px){
+  .steps__list{
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  #app .white-section.steps-host{
+    padding-bottom: 80px;
+  }
+}
 </style>
