@@ -1,5 +1,4 @@
 <template>
-  <app-header></app-header>
   <div class="root-button-banner banner banner-top banner-new-cus">
     <img :src="fon1" class="banner__fon">
     <app-banner></app-banner>
@@ -20,7 +19,7 @@
 </template>
 
 <script>
-import AppHeader from './components/header.vue'
+
 import AppBanner from './components/AppBanner.vue'
 import fon1 from './assets/fon1.png'
 import BannerText from './components/BannerText.vue'
@@ -36,7 +35,6 @@ import AppModalSec from './components/AppModalSec'
 export default {
   name: 'App',
   components: {
-    'app-header': AppHeader,
     'app-banner': AppBanner,
     'banner-text': BannerText,
     'app-talk': AppTalk,
